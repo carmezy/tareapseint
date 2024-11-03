@@ -1,0 +1,53 @@
+Algoritmo CalculadoraIMC
+    // Declaración de variables
+    Definir peso, altura, imc Como Real
+    Definir categoria Como Cadena
+    
+    // Entrada de datos
+    Escribir "=== Calculadora de Índice de Masa Corporal (IMC) ==="
+    Escribir "Ingrese su peso en kilogramos:"
+    Leer peso
+    
+    Escribir "Ingrese su altura en metros:"
+    Leer altura
+    
+    // Cálculo del IMC
+    imc <- peso / (altura * altura)
+    
+    // Determinar categoría según la OMS
+    Si imc < 18.5 Entonces
+        categoria <- "Bajo peso"
+    SiNo
+        Si imc < 25 Entonces
+            categoria <- "Peso normal"
+        SiNo
+            Si imc < 30 Entonces
+                categoria <- "Sobrepeso"
+            SiNo
+                Si imc < 35 Entonces
+                    categoria <- "Obesidad grado I"
+                SiNo
+                    Si imc < 40 Entonces
+                        categoria <- "Obesidad grado II"
+                    SiNo
+                        categoria <- "Obesidad grado III"
+                    FinSi
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+    
+    // Mostrar resultados
+    Escribir " Resultados"
+    Escribir "Su IMC es: ", imc
+    Escribir "Categoría: ", categoria
+    Escribir ""
+    Escribir "Categorías de IMC según la OMS:"
+    Escribir "< 18.5: Bajo peso"
+    Escribir "18.5 - 24.9: Peso normal"
+    Escribir "25.0 - 29.9: Sobrepeso"
+    Escribir "30.0 - 34.9: Obesidad grado I"
+    Escribir "35.0 - 39.9: Obesidad grado II"
+    Escribir "≥ 40.0: Obesidad grado III"
+    
+FinAlgoritmo
