@@ -1,0 +1,26 @@
+Algoritmo CalcularSalarioNeto
+    // Declaración de variables
+    Definir salarioBruto, salarioNeto, impuestoRenta, seguroSocial, otrosDescuentos Como Real
+    
+    // Entrada de datos
+    Escribir "Ingrese el salario bruto del empleado:"
+    Leer salarioBruto
+    
+    // Cálculo de deducciones
+    impuestoRenta <- salarioBruto * 0.15  // 15% de impuesto sobre la renta
+    seguroSocial <- salarioBruto * 0.0725 // 7.25% de seguro social
+    otrosDescuentos <- salarioBruto * 0.03 // 3% otros descuentos
+    
+    // Cálculo del salario neto
+    salarioNeto <- salarioBruto - impuestoRenta - seguroSocial - otrosDescuentos
+    
+    // Mostrar resultados
+    Escribir " Desglose de Salario"
+    Escribir "Salario Bruto: $", salarioBruto
+    Escribir "Impuesto sobre la Renta (15%): $", impuestoRenta
+    Escribir "Seguro Social (7.25%): $", seguroSocial
+    Escribir "Otros Descuentos (3%): $", otrosDescuentos
+    Escribir "------------------------"
+    Escribir "Salario Neto: $", salarioNeto
+    
+FinAlgoritmo
