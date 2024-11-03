@@ -22,5 +22,6 @@ Algoritmo CalcularSalarioNeto
     Escribir "Otros Descuentos (3%): $", otrosDescuentos
     Escribir "------------------------"
     Escribir "Salario Neto: $", salarioNeto
-    
+
+
 FinAlgoritmo
