@@ -1,0 +1,41 @@
+Algoritmo CalcularCostoViaje
+    // Declaración de variables
+    Definir distanciaKm, consumoCombustible, precioCombustible Como Real
+    Definir cantidadPeajes, costoPeaje, costoTotalPeajes Como Real
+    Definir costoCombustible, costoTotal Como Real
+    
+    // Entrada de datos del viaje
+    Escribir "=== Calculadora de Costo de Viaje ==="
+    Escribir "Ingrese la distancia del viaje en kilómetros:"
+    Leer distanciaKm
+    
+    Escribir "Ingrese el consumo de combustible (km/litro):"
+    Leer consumoCombustible
+    
+    Escribir "Ingrese el precio del combustible por litro:"
+    Leer precioCombustible
+    
+    Escribir "Ingrese la cantidad de peajes en la ruta:"
+    Leer cantidadPeajes
+    
+    // Cálculo de costos de peajes
+    costoTotalPeajes <- 0
+    Para i <- 1 Hasta cantidadPeajes Con Paso 1 Hacer
+        Escribir "Ingrese el costo del peaje #", i, ":"
+        Leer costoPeaje
+        costoTotalPeajes <- costoTotalPeajes + costoPeaje
+    FinPara
+    
+    // Cálculos finales
+    costoCombustible <- (distanciaKm / consumoCombustible) * precioCombustible
+    costoTotal <- costoCombustible + costoTotalPeajes
+    
+    // Mostrar resultados
+    Escribir "=== Resumen de Costos ==="
+    Escribir "Distancia total: ", distanciaKm, " km"
+    Escribir "Costo en combustible: $", costoCombustible
+    Escribir "Costo total en peajes: $", costoTotalPeajes
+    Escribir "------------------------"
+    Escribir "Costo total del viaje: $", costoTotal
+    
+FinAlgoritmo
