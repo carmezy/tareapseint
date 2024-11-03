@@ -1,0 +1,31 @@
+Algoritmo ConvertirTemperaturas
+    // Declaración de variables
+    Definir opcion Como Entero
+    Definir temperatura, resultado Como Real
+    
+    opciones
+    Escribir "=== Conversor de Temperaturas ==="
+    Escribir "1. Celsius a Fahrenheit"
+    Escribir "2. Fahrenheit a Celsius"
+    Escribir "Seleccione una opción (1 o 2):"
+    Leer opcion
+    
+     conversión según la opción
+    Segun opcion Hacer
+        1:
+            Escribir "Ingrese la temperatura en Celsius:"
+            Leer temperatura
+            resultado <- (temperatura * 9/5) + 32
+            Escribir temperatura, "°C equivale a ", resultado, "°F"
+            
+        2:
+            Escribir "Ingrese la temperatura en Fahrenheit:"
+            Leer temperatura
+            resultado <- (temperatura - 32) * 5/9
+            Escribir temperatura, "°F equivale a ", resultado, "°C"
+            
+        De Otro Modo:
+            Escribir "Opción no válida"
+    FinSegun
+    
+FinAlgoritmo
